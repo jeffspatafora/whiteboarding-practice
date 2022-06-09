@@ -50,6 +50,21 @@ p under100([0, -20, 150, 4])
 
 def under100(numbers_array)
   numbers_under100 = []
+  numbers_array.each do |number|
+    if number < 100
+      numbers_under100 << number
+    end
+  end
+  numbers_under100
+end
+
+p under100([99, 101, 88, 4, 2000, 50])
+p under100([44, 120, 161, 3, 2000])
+p under100([350, 22, 13, 98, 3079])
+p under100([0, -20, 150, 4])
+
+def under100(numbers_array)
+  numbers_under100 = []
   numbers_under100 = numbers_array.select do |number|
     number < 100
   end
