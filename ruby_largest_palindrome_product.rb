@@ -50,13 +50,13 @@ p highest_palindrome
 
 # p number.to_s.reverse 
 
-number1 = 100
+number1 = 0
 # number2 = 99
 current_palindrome = 0
 highest_palindrome = 0
 
 while number1 < 1000
-  number2 = 100
+  number2 = 0
   while number2 < 1000
     product = number1 * number2
     if product.to_s == product.to_s.reverse
