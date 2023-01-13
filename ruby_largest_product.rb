@@ -16,8 +16,8 @@ def largest_product(numbers)
     x = 0
     while x < numbers.length
       temp_product = numbers[i] * numbers[x]
-      p temp_product
-      if temp_product > largest_product
+      # p temp_product
+      if temp_product > largest_product && numbers[i] != numbers[x]
         largest_product = temp_product
         temp_product = 0
         x += 1
