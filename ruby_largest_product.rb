@@ -10,10 +10,10 @@
 def largest_product(numbers)
   largest_product = 0
   i = 0
-  x = 0
   temp_product = 0
-  largest_product = numbers[i] + numbers[x]
+  largest_product = 0
   while i < numbers.length
+    x = 0
     while x < numbers.length
       temp_product = numbers[i] * numbers[x]
       p temp_product
