@@ -19,19 +19,27 @@
 def two_sum(numbers)
   i = 0
   output = [0, 0]
+  # p output
   while i < numbers.length
     x = 0
+    # p numbers[i]
     while x < numbers.length
-      if numbers[i] + numbers[x] = 10
-        p numbers[i]
-        p numbers[x]
-        output[0] = numbers[i]
-        output[1] = numbers[x]
-        x += 1
-      else
-        output = "false"
-        x += 1
-      end
+      p numbers[i]
+      p numbers[x]
+      p numbers[i] + numbers[x]
+      p "end"
+      # if numbers[i] + numbers[x] = 10
+      #   p numbers[i]
+      #   p numbers[x]
+      #   p "equals 10"
+      #   output[0] = numbers[i]
+      #   output[1] = numbers[x]
+      #   x += 1
+      # else
+      #   output = "false"
+      #   x += 1
+      # end 
+      x += 1
     end
     i += 1
   end
