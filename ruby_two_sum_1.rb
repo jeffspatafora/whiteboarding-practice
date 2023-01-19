@@ -32,8 +32,12 @@ def two_sum(numbers)
         p numbers[i]
         p numbers[x]
         p "equals 10"
-        output << numbers[i]
-        output << numbers[x]
+        if output.include?(numbers[i]) == false && output.include?(numbers[x]) == false
+          output << numbers[i]
+          output << numbers[x]
+        else
+          output = output
+        end
         x += 1
       else
         # output = "false"
@@ -43,7 +47,14 @@ def two_sum(numbers)
     end
     i += 1
   end
+  if output == []
+    output = false
+  end
   p output
 end
 
 two_sum([2, 5, 3, 1, 0, 7, 11])
+two_sum([1, 2, 3, 4, 5])
+two_sum([5, 5, 7, 6, 1])
+two_sum([5, 5, 7, 6, 1])
+two_sum([0, 7, 2, 8, 10])
